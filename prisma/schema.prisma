@@ -36,7 +36,7 @@ model menuCategory {
   id           String     @id @default(uuid())
   name         String
   restaurantId String
-  restaurant   Restaurant @relation(fields: [restaurantId], references: [id])
+  restaurant   Restaurant @relation(fields: [restaurantId], references: [id], onDelete: Cascade)
   createdAt    DateTime   @default(now())
   updatedAt    DateTime   @updatedAt
   products     Product[]
@@ -52,9 +52,9 @@ model Product {
   updatedAt      DateTime       @updatedAt
   ingredients    String[]
   restaurantId   String
-  restaurant     Restaurant     @relation(fields: [restaurantId], references: [id])
+  restaurant     Restaurant     @relation(fields: [restaurantId], references: [id], onDelete: Cascade)
   menuCategoryId String
-  menuCategory   menuCategory   @relation(fields: [menuCategoryId], references: [id])
+  menuCategory   menuCategory   @relation(fields: [menuCategoryId], references: [id], onDelete: Cascade)
   orderProducts  orderProduct[]
 }
 
@@ -65,9 +65,9 @@ model orderProduct {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   orderId   Int
-  order     Order    @relation(fields: [orderId], references: [id])
+  order     Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
   productId String
-  product   Product  @relation(fields: [productId], references: [id])
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
 }
 
 model Order {
@@ -80,7 +80,7 @@ model Order {
   consumptionMethod consumptionMethod @default(DINE_IN)
   orderProducts     orderProduct[]
   restaurantId      String
-  restaurant        Restaurant        @relation(fields: [restaurantId], references: [id])
+  restaurant        Restaurant        @relation(fields: [restaurantId], references: [id], onDelete: Cascade)
 }
 
 enum OrderStatus {
