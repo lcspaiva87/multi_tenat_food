@@ -9,6 +9,8 @@ export default function Header() {
     <header className="relative h-screen">
       <div className="absolute inset-0">
         <Image
+          width={1000}
+          height={1000}
           src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80"
           alt="Fundo de comida"
           className="w-full h-full object-cover"
