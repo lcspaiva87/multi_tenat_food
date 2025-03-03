@@ -9,12 +9,16 @@
     "lint": "next lint",
     "prepare": "husky"
   },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
   "dependencies": {
     "@prisma/client": "^6.4.1",
     "next": "15.2.0",
     "prisma": "^6.4.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "studio": "^0.13.5"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.7.1",
@@ -29,6 +33,7 @@
     "eslint-config-next": "15.2.0",
     "husky": "^9.1.7",
     "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
   }
 }
