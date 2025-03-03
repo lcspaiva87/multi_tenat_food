@@ -17,6 +17,7 @@ model Restaurant {
   id             String         @id @default(uuid())
   name           String
   address        String
+  slug           String         @unique
   phone          String
   email          String
   website        String
