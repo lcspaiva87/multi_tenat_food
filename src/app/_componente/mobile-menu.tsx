@@ -1,13 +1,13 @@
-'use client'
-import { Menu } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+'use client';
+import { Button } from '@/components/ui/button';
 import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from '@/components/ui/sheet'
+} from '@/components/ui/sheet';
+import { Menu } from 'lucide-react';
 
 export function MobileMenu() {
   return (
@@ -49,5 +49,5 @@ export function MobileMenu() {
         </div>
       </SheetContent>
     </Sheet>
-  )
+  );
 }

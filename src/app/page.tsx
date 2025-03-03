@@ -1,6 +1,7 @@
-import React from 'react'
-import { Utensils, Bike, Clock, Shield, ChefHat, Star } from 'lucide-react'
-import Header from './_componente/header'
+import { Button } from '@/components/ui/button';
+import { Bike, ChefHat, Clock, Shield, Star, Utensils } from 'lucide-react';
+import type React from 'react';
+import Header from './_componente/header';
 
 function App() {
   return (
@@ -59,13 +60,13 @@ function App() {
             Junte-se a milhares de restaurantes de sucesso usando o FoodHub para
             fazer seus negócios crescerem.
           </p>
-          <button className="bg-white text-orange-500 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition">
+          <Button className="bg-white text-orange-500 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition">
             Comece Seu Teste Grátis
-          </button>
+          </Button>
         </div>
       </section>
     </div>
-  )
+  );
 }
 
 function FeatureCard({
@@ -73,9 +74,9 @@ function FeatureCard({
   title,
   description,
 }: {
-  icon: React.ReactNode
-  title: string
-  description: string
+  icon: React.ReactNode;
+  title: string;
+  description: string;
 }) {
   return (
     <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
@@ -83,7 +84,7 @@ function FeatureCard({
       <h3 className="text-xl font-semibold mb-3">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
