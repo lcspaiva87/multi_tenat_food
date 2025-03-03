@@ -1,8 +1,8 @@
-'use client'
-import { Utensils } from 'lucide-react'
-import { MobileMenu } from './mobile-menu'
-import { Button } from '@/components/ui/button'
-import Image from 'next/image'
+'use client';
+import { Button } from '@/components/ui/button';
+import { Utensils } from 'lucide-react';
+import Image from 'next/image';
+import { MobileMenu } from './mobile-menu';
 
 export default function Header() {
   return (
@@ -31,9 +31,9 @@ export default function Header() {
           <a href="#pricing" className="hover:text-orange-400 transition">
             Preços
           </a>
-          <button className="bg-orange-500 px-6 py-2 rounded-full hover:bg-orange-600 transition">
+          <Button className="bg-orange-500 px-6 py-2 rounded-full hover:bg-orange-600 transition">
             Login Restaurante
-          </button>
+          </Button>
         </div>
 
         {/* Menu Mobile */}
@@ -58,5 +58,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }
