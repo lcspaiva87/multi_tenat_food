@@ -13,6 +13,7 @@ const main = async () => {
         address: 'Rua dos Restaurantes, 123',
         phone: '(11) 99999-9999',
         email: 'contato@fswdonalds.com',
+        slug: 'fsw-donalds',
         website: 'https://fswdonalds.com',
         avatarImage:
           'https://u9a6wmr3as.ufs.sh/f/jppBrbk0cChQvcNP9rHlEJu1vCY5kLqzjf29HKaeN78Z6pRy',
