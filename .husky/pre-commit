@@ -1,6 +1,4 @@
 #!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
 # Executa o Biome nos arquivos modificados
 git diff --cached --name-only | grep -E '\.(js|jsx|ts|tsx)$' | xargs npx biome check --apply
 git add .
