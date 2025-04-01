@@ -6,10 +6,8 @@ import Header from './_componente/header';
 function App() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Seção Hero */}
       <Header />
 
-      {/* Seção de Recursos */}
       <section id="features" className="py-20 px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16">
@@ -50,7 +48,6 @@ function App() {
         </div>
       </section>
 
-      {/* Seção CTA */}
       <section className="bg-orange-500 py-20 px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">

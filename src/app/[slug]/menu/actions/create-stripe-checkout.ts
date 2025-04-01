@@ -6,8 +6,8 @@ import Stripe from 'stripe';
 
 import { prismaClient } from '@/lib/prisma';
 
+import { removeCpfPunctuation } from '@/helpers/cpf';
 import type { CartProduct } from '../contexts/cart';
-import { removeCpfPunctuation } from '../helpers/cpf';
 
 interface CreateStripeCheckoutInput {
   products: CartProduct[];
