@@ -17,7 +17,7 @@ interface OrderListProps {
         restaurant: {
           select: {
             name: true;
-            avatarImageUrl: true;
+            avatarImage: true;
           };
         };
         orderProducts: {
@@ -67,7 +67,7 @@ const OrderList = ({ orders }: OrderListProps) => {
             <div className="flex items-center gap-2">
               <div className="relative h-5 w-5">
                 <Image
-                  src={order.restaurant.avatarImageUrl}
+                  src={order.restaurant.avatarImage}
                   alt={order.restaurant.name}
                   className="rounded-sm"
                   fill
