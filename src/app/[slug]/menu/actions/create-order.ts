@@ -3,9 +3,8 @@
 import type { consumptionMethod } from '@prisma/client';
 import { revalidatePath } from 'next/cache';
 
+import { removeCpfPunctuation } from '@/helpers/cpf';
 import { prismaClient } from '@/lib/prisma';
-
-import { removeCpfPunctuation } from '../helpers/cpf';
 
 interface CreateOrderInput {
   customerName: string;
